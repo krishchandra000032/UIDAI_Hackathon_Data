@@ -29,12 +29,15 @@ Clone the repository
 Bash
 
 git clone https://github.com/yourusername/uidai-hackathon-2026.git
+
 cd uidai-hackathon-2026
+
 Install dependencies
 
 Bash
 
 pip install pandas numpy matplotlib seaborn scikit-learn fuzzywuzzy python-Levenshtein
+
 Prepare Data
 
 Create a folder named raw_data.
@@ -42,6 +45,7 @@ Create a folder named raw_data.
 Place all your source CSV files inside it.
 
 ⚡ Execution Pipeline (How to Run)
+
 Follow this order to replicate the results:
 
 1. Data Cleaning (ETL)
