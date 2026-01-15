@@ -152,6 +152,10 @@ python -m src.model \
 ```
 </details>
 
+#Aadhar Dataset (Raw Data Set VS Clean Data Set)
+<img width="1400" height="600" alt="comparison_chart" src="https://github.com/user-attachments/assets/2b7c20c1-6afa-43fe-bd89-1ed20857b813" />
+
+
 Best practices & notes
 - Do NOT commit large raw data files to the repository. Use .gitignore for data/.
 - Add CI (GitHub Actions) to run tests and basic checks on PRs.
