@@ -47,12 +47,10 @@ UIDAI_Hackathon_Data/
 ├── LICENSE
 ├── requirements.txt
 ├── data/                     # Raw and processed datasets (not tracked if large)
-│   ├── raw/
-│   └── processed/
+│   ├── raw_data/
+│   └── clean_data/
 ├── images/                   # PNGs and visualization assets
 │   └── uidai-overview.png
-├── notebooks/                # Jupyter notebooks for exploration
-│   └── EDA.ipynb
 ├── src/                      # Source code (modules & scripts)
 │   ├── __init__.py
 │   ├── preprocessing.py
@@ -152,25 +150,44 @@ python -m src.model \
 ```
 </details>
 
-### Aadhar Dataset (Raw Data Set VS Clean Data Set)
+---
+### ℹ️ Visualization & InfoGraphics
+
+### Aadhar Dataset (Raw Data Set VS Clean Data Set) 
+('FuzzyWuzzy')
 <img width="1400" height="600" alt="comparison_chart" src="https://github.com/user-attachments/assets/2b7c20c1-6afa-43fe-bd89-1ed20857b813" />
 
+### 🧐 Analysis (Trivariate Analysis of Clean Data Set)
 
-Best practices & notes
+<img width="1000" height="600" alt="analysis_category_age_vol" src="https://github.com/user-attachments/assets/cb509b54-2272-40b0-b939-bffda446ba39" />
+
+<img width="1200" height="800" alt="analysis_heatmap" src="https://github.com/user-attachments/assets/ec469a7c-36c8-4694-b84e-c2e16bde107b" />
+
+<img width="1400" height="700" alt="analysis_state_category_vol" src="https://github.com/user-attachments/assets/62f7f477-6d75-40bc-9c5f-4a86ee496494" />
+
+### 🧩 Anomalies (Fraud Detection and False Data) 
+('Isolation forest')
+
+<img width="1500" height="1000" alt="anomaly_report" src="https://github.com/user-attachments/assets/fba7817d-d005-4bc3-a17e-3f4ed79b8632" />
+
+<img width="437" height="187" alt="top5anamolies1" src="https://github.com/user-attachments/assets/726def89-8ee7-49f4-a2e3-b9240f767a21" />
+
+<img width="649" height="224" alt="top5anamolies 2" src="https://github.com/user-attachments/assets/c0015c64-c414-4402-9887-7cd1915e84cf" />
+
+### ⌛️ Forecast (360 days prediction models) ('Footfall Forcaster')
+
+<img width="1500" height="700" alt="forecast_2026" src="https://github.com/user-attachments/assets/1f7bb030-d30d-4444-bc49-58b06bdb4fc1" />
+
+---
+
+### Best practices & notes
 - Do NOT commit large raw data files to the repository. Use .gitignore for data/.
 - Add CI (GitHub Actions) to run tests and basic checks on PRs.
 - Keep the requirements.txt minimal and pinned for reproducibility.
 
-Contributing
-1. Fork the repo
-2. Create a feature branch: git checkout -b feat/my-feature
-3. Make changes and add tests
-4. Open a PR with a clear description of changes
+---
 
-License
-If you have a preferred license, add a LICENSE file in the repo root. The badge above will reflect the chosen license. If none is specified, add one (e.g., MIT) to clarify reuse terms.
-
-Contact
+### ✉️ Contact
 
 Maintainer: krishchandra000032 (krishuchandra1783@gmail.com)
 
@@ -178,7 +195,9 @@ Collaborater: Insaan01 (sakshamagarwal.octave@gmail.com)
 
 Repository: https://github.com/krishchandra000032/UIDAI_Hackathon_Data
 
-Acknowledgements
+---
+
+### 🏅 Acknowledgements
 - UIDAI hackathon materials and collaborators
 - Open-source libraries used (pandas, scikit-learn, numpy, matplotlib, etc.)
 
