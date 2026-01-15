@@ -14,6 +14,7 @@ This repository hosts an end-to-end Data Intelligence Pipeline developed for the
 👉Resource Planning: AI-driven forecasting of future footfall for 2026.
 
 🚀 Key Features
+
 👉Self-Healing Data: Uses FuzzyWuzzy and Levenshtein distance to automatically merge variations like "West Bengal" and "west bengal" without manual dictionaries.
 
 👉Unified Master Dataset: Merges disparate CSV sources (Biometric, Demographic, Enrolment) into a single analytical source of truth.
