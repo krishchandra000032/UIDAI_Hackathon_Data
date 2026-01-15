@@ -1,4 +1,4 @@
-# 🇮🇳 Aadhar Data Intelligence Suite (UIDAI Hackathon 2026)
+# Aadhar Data Intelligence Suite (UIDAI Hackathon 2026)
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue?style=for-the-badge&logo=python)
 ![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?style=for-the-badge&logo=pandas)
