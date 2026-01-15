@@ -10,6 +10,8 @@ INPUT_FILE = "final_master_dataset.csv"
 OUTPUT_IMG = "forecast_2026.png"
 
 
+
+
 def create_features(df):
     """
     Creates time-series features for the Machine Learning model.
@@ -21,6 +23,8 @@ def create_features(df):
     df['sin_day'] = np.sin(2 * np.pi * df['day_of_year'] / 365.0)
     df['cos_day'] = np.cos(2 * np.pi * df['day_of_year'] / 365.0)
     return df
+
+
 
 
 def run_forecast():
