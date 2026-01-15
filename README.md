@@ -168,9 +168,9 @@ If you have a preferred license, add a LICENSE file in the repo root. The badge 
 
 Contact
 
-Maintainer: krishchandra000032
+Maintainer: krishchandra000032 (krishuchandra1783@gmail.com)
 
-Collaborater: Insaan01
+Collaborater: Insaan01 (sakshamagarwal.octave@gmail.com)
 
 Repository: https://github.com/krishchandra000032/UIDAI_Hackathon_Data
 
