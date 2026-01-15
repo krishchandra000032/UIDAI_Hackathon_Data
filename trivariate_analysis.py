@@ -4,7 +4,7 @@ import seaborn as sns
 import glob
 import os
 
-INPUT_FILE = "final_master_dataset.csv"  # Ensure this file exists from the previous merge step
+INPUT_FILE = "final_master_dataset.csv"
 
 
 def perform_trivariate_analysis():
