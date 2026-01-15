@@ -20,7 +20,7 @@ This repository hosts a comprehensive **Data Engineering & AI Pipeline** designe
 ```text
 UIDAI_Hackathon_Project/
 ├── raw_data/                 # Place your original 10+ CSV files here
-├── clean/                    # (Auto-generated) standardized CSVs
+├── clean_data/                    # (Auto-generated) standardized CSVs
 ├── clean_data.py             # Script 1: Cleaning & Normalization
 ├── visualize_data.py         # Script 2: Before/After Cleaning Graphs
 ├── merge_data.py             # Script 3: Master Dataset Creation
@@ -31,3 +31,34 @@ UIDAI_Hackathon_Project/
 ├── detected_anomalies.csv    # (Output) List of suspicious transactions
 ├── README.md                 # Project Documentation
 └── requirements.txt          # Python dependencies
+
+---
+
+## 🚀 Installation & Setup
+
+1.  **Clone the Repository**
+    ```bash
+    git clone [https://github.com/your-username/UIDAI-Hackathon-Project.git](https://github.com/your-username/UIDAI-Hackathon-Project.git)
+    cd UIDAI_Hackathon_Project
+    ```
+
+2.  **Install Dependencies**
+    Ensure you have Python 3.8+ installed. Then run:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3.  **Data Setup**
+    * Create a folder named `raw_data` in the root directory.
+    * Place all your original Aadhar CSV files (Enrolment, Biometric, Demographic) inside `raw_data/`.
+
+---
+
+## 🛠️ Execution Pipeline
+
+Run the scripts in this specific order to replicate the full analysis:
+
+### **1. Data Cleaning**
+Standardizes State/District names (e.g., merging "Maharashtra" & "Maha rashtra") and removes duplicates.
+```bash
+python clean_data.py
