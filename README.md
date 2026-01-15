@@ -24,6 +24,7 @@ This repository hosts an end-to-end Data Intelligence Pipeline developed for the
 👉Predictive Modeling: Uses Gradient Boosting Regressors to forecast daily footfall for the next 365 days, accounting for seasonal and weekly cyclic patterns.
 
 ⚙️ Setup & Installation
+'''
 Clone the repository
 
 Bash
@@ -31,6 +32,7 @@ Bash
 git clone https://github.com/yourusername/uidai-hackathon-2026.git
 
 cd uidai-hackathon-2026
+'''
 
 Install dependencies
 
