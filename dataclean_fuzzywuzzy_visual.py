@@ -9,6 +9,7 @@ CLEAN_FOLDER = "clean_data"
 
 
 def get_metrics(folder, filename, is_clean_folder=False):
+    """Reads a file and returns row count and unique state count."""
     path = os.path.join(folder, filename)
 
     try:

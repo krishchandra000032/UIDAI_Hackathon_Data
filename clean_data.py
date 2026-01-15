@@ -9,7 +9,9 @@ THRESHOLD = 90
 
 
 def get_optimized_mapping(series, threshold=90):
-
+    """
+    Creates a mapping dictionary to standardize text using fuzzy logic.
+    """
     counts = series.value_counts()
     unique_values = counts.index.tolist()
 
