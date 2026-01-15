@@ -22,3 +22,27 @@ This repository hosts an end-to-end Data Intelligence Pipeline developed for the
 👉Anomaly Detection: Implements an Isolation Forest algorithm to detect statistical outliers (potential fraud or "ghost" centres) in the top 1% of transactions.
 
 👉Predictive Modeling: Uses Gradient Boosting Regressors to forecast daily footfall for the next 365 days, accounting for seasonal and weekly cyclic patterns.
+
+⚙️ Setup & Installation
+Clone the repository
+
+Bash
+
+git clone https://github.com/yourusername/uidai-hackathon-2026.git
+cd uidai-hackathon-2026
+Install dependencies
+
+Bash
+
+pip install pandas numpy matplotlib seaborn scikit-learn fuzzywuzzy python-Levenshtein
+Prepare Data
+
+Create a folder named raw_data.
+
+Place all your source CSV files inside it.
+
+⚡ Execution Pipeline (How to Run)
+Follow this order to replicate the results:
+
+1. Data Cleaning (ETL)
+Standardizes spelling and removes duplicates.
