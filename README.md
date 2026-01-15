@@ -179,7 +179,7 @@ python -m src.model \
 <img width="1500" height="700" alt="forecast_2026" src="https://github.com/user-attachments/assets/1f7bb030-d30d-4444-bc49-58b06bdb4fc1" />
 
 ---
-
+ 
 ### Best practices & notes
 - Do NOT commit large raw data files to the repository. Use .gitignore for data/.
 - Add CI (GitHub Actions) to run tests and basic checks on PRs.
