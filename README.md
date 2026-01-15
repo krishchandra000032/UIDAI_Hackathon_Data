@@ -1,23 +1,28 @@
-# UIDAI_Hackathon_Data 2026
+# 🇮🇳 Aadhar Data Intelligence Suite (UIDAI Hackathon 2026)
 
-Badges
-- [![GitHub stars](https://img.shields.io/github/stars/krishchandra000032/UIDAI_Hackathon_Data?style=flat-square)](https://github.com/krishchandra000032/UIDAI_Hackathon_Data/stargazers)
-- [![Forks](https://img.shields.io/github/forks/krishchandra000032/UIDAI_Hackathon_Data?style=flat-square)](https://github.com/krishchandra000032/UIDAI_Hackathon_Data/network/members)
-- [![Issues](https://img.shields.io/github/issues/krishchandra000032/UIDAI_Hackathon_Data?style=flat-square)](https://github.com/krishchandra000032/UIDAI_Hackathon_Data/issues)
-- [![Top Language](https://img.shields.io/github/languages/top/krishchandra000032/UIDAI_Hackathon_Data?style=flat-square)](https://github.com/krishchandra000032/UIDAI_Hackathon_Data)
-- [![Last Commit](https://img.shields.io/github/last-commit/krishchandra000032/UIDAI_Hackathon_Data?style=flat-square)](https://github.com/krishchandra000032/UIDAI_Hackathon_Data/commits)
-- [![License](https://img.shields.io/github/license/krishchandra000032/UIDAI_Hackathon_Data?style=flat-square)](https://github.com/krishchandra000032/UIDAI_Hackathon_Data/blob/main/LICENSE)
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue?style=for-the-badge&logo=python)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?style=for-the-badge&logo=pandas)
+![Scikit-Learn](https://img.shields.io/badge/scikit--learn-Anomaly%20Detection-orange?style=for-the-badge&logo=scikit-learn)
+![Status](https://img.shields.io/badge/Status-Hackathon%20Ready-success?style=for-the-badge)
+
+## 📌 Project Overview
+This repository hosts a comprehensive **Data Engineering & AI Pipeline** designed for the **UIDAI Hackathon 2026**. It tackles the challenge of processing massive, noisy Aadhar administrative datasets. The suite automates the journey from raw, inconsistent CSV files to high-level predictive insights.
+
+**Key Capabilities:**
+* **Fuzzy Cleaning:** Uses Levenshtein distance (`fuzzywuzzy`) to fix typo-riddled State/District names.
+* **Unified Merging:** Intelligently combines Enrolment, Biometric, and Demographic datasets.
+* **Fraud Detection:** Unsupervised ML (**Isolation Forest**) to flag suspicious "Ghost Centres" (anomalous volume spikes).
+* **AI Forecasting:** **Gradient Boosting** to predict future footfall for 2026 based on seasonal patterns.
+
+---
+
+
 
 Short description
 This repository contains code, notebooks, and data assets used for the UIDAI hackathon — data processing, modeling experiments, and evaluation scripts for Aadhaar-related dataset tasks (preprocessing, feature engineering, modeling and evaluation). The project is Python-based.
 
-Project screenshot
-### Project overview
-![UIDAI overview](images/uidai-overview.png)
 
-(Place a representative PNG at `images/uidai-overview.png`. Replace or update the path if you store images elsewhere.)
-
-Table of contents
+### Table of contents
 - Features
 - Project structure
 - Installation
@@ -162,8 +167,11 @@ License
 If you have a preferred license, add a LICENSE file in the repo root. The badge above will reflect the chosen license. If none is specified, add one (e.g., MIT) to clarify reuse terms.
 
 Contact
+
 Maintainer: krishchandra000032
+
 Collaborater: Insaan01
+
 Repository: https://github.com/krishchandra000032/UIDAI_Hackathon_Data
 
 Acknowledgements
