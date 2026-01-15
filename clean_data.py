@@ -3,7 +3,6 @@ import glob
 import os
 from fuzzywuzzy import process, fuzz
 
-# --- Configuration ---
 INPUT_FOLDER = "raw_data"
 OUTPUT_FOLDER = "clean_data"
 THRESHOLD = 90
@@ -43,7 +42,6 @@ def clean_file(file_path):
     filename = os.path.basename(file_path)
     print(f"Processing: {filename}...")
 
-    # 1. Load Data
     try:
         df = pd.read_csv(file_path)
     except Exception as e:
@@ -52,14 +50,11 @@ def clean_file(file_path):
 
     original_count = len(df)
 
-    # 2. Standardize Column Names
     df.columns = df.columns.str.strip().str.lower()
 
-    # 3. Remove structural garbage (header repetitions)
     if 'state' in df.columns:
         df = df[df['state'] != 'state']
 
-    # 4. Fuzzy Clean 'State' and 'District'
     for col in ['state', 'district']:
         if col in df.columns:
             valid_values = df[col].dropna().astype(str)
@@ -68,12 +63,10 @@ def clean_file(file_path):
                 mapping_dict = get_optimized_mapping(valid_values, THRESHOLD)
                 df[col] = df[col].map(mapping_dict).fillna(df[col])
 
-    # 5. Remove unwanted data (Nulls and Duplicates)
     subset_cols = [c for c in ['state', 'district', 'pincode'] if c in df.columns]
     df.dropna(subset=subset_cols, inplace=True)
     df.drop_duplicates(inplace=True)
 
-    # 6. Save to 'clean' folder
     clean_filename = f"clean_{filename}"
     output_path = os.path.join(OUTPUT_FOLDER, clean_filename)
 
@@ -84,14 +77,11 @@ def clean_file(file_path):
     print(f"  -> Removed {original_count - cleaned_count} rows.\n")
 
 
-# --- Main Execution ---
 if __name__ == "__main__":
-    # Create output directory if it doesn't exist
     if not os.path.exists(OUTPUT_FOLDER):
         os.makedirs(OUTPUT_FOLDER)
         print(f"Created folder: {OUTPUT_FOLDER}")
 
-    # Find all CSVs in the raw_data folder
     search_path = os.path.join(INPUT_FOLDER, "*.csv")
     files = glob.glob(search_path)
 
