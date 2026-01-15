@@ -152,7 +152,7 @@ python -m src.model \
 ```
 </details>
 
-#Aadhar Dataset (Raw Data Set VS Clean Data Set)
+### Aadhar Dataset (Raw Data Set VS Clean Data Set)
 <img width="1400" height="600" alt="comparison_chart" src="https://github.com/user-attachments/assets/2b7c20c1-6afa-43fe-bd89-1ed20857b813" />
 
 
